@@ -27,7 +27,7 @@ def get_authorization_headers():
 def create_video():
     url = ("https://cms.api.brightcove.com/v1/accounts/{pubid}/videos/").format(pubid=pub_id)
     data = '{"name": "***VIDEO TITLE HERE***"}'
-    r = requests.post(url, headers=get_authorization_header(), data=data)
+    r = requests.post(url, headers=get_authorization_headers(), data=data)
     return r.json()
 
 # di_request makes the Ingest API call to populate a video with transcoded renditions

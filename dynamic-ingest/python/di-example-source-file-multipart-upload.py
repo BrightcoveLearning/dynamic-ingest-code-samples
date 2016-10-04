@@ -29,7 +29,7 @@ def get_authorization_headers():
 def create_video():
     url = ("https://cms.api.brightcove.com/v1/accounts/{pubid}/videos/").format(pubid=pub_id)
     data = '{"name": "***VIDEO TITLE HERE***"}'
-    r = requests.post(url, headers=get_authorization_header(), data=data)
+    r = requests.post(url, headers=get_authorization_headers(), data=data)
     return r.json()
 
 # get_upload_location_and_upload_file first performs an authenticated request to discover
@@ -38,7 +38,7 @@ def get_upload_location_and_upload_file(account_id, video_id, source_filename):
     
     # Perform an authorized request to obtain a file upload location
     url = ("https://cms.api.brightcove.com/v1/accounts/{pubid}/videos/{videoid}/upload-urls/{sourcefilename}").format(pubid=pub_id, videoid=video_id, sourcefilename=source_filename)
-    r = requests.get(url, headers=get_authorization_header)
+    r = requests.get(url, headers=get_authorization_headers())
     upload_urls_response = r.json()
     
     # Upload the contents of our local file to the location provided us
