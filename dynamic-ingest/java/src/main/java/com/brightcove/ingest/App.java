@@ -34,14 +34,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class App 
+public class App
 {
 	public static final String oAuthClientId = "REDACTED";
 	public static final String oAuthClientSecret = "REDACTED";
 	public static final String accountId = "ADD YOUR ACCOUNT ID HERE";
-    
-	public static final String accessTokenUrl = "https://oauth.brightcove.com/v3/access_token";
-    public static final String createVideoUrl = "https://cms.api.brightcove.com/v1beta1/accounts/ACCOUNT_ID/videos/";
+
+	public static final String accessTokenUrl = "https://oauth.brightcove.com/v4/access_token";
+    public static final String createVideoUrl = "https://cms.api.brightcove.com/v1/accounts/ACCOUNT_ID/videos/";
 	public static final String uploadUrlsUrl = "https://cms.api.brightcove.com/v1/accounts/ACCOUNT_ID/videos/VIDEO_ID/upload-urls/SOURCE_NAME";
     public static final String dynamicIngestUrl = "https://ingest.api.brightcove.com/v1/accounts/ACCOUNT_ID/videos/VIDEO_ID/ingest-requests";
     public static final String masterFileName = "265_ColoCribs.mp4";
