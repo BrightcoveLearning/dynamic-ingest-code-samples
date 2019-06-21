@@ -64,4 +64,4 @@ def di_request(video_id, upload_urls_response):
 if __name__ == '__main__':
     v = create_video()
     upload_urls = get_upload_location_and_upload_file(pub_id, v['id'], source_filename)
-    print di_request(v['id'], upload_urls)
+    print(di_request(v['id'], upload_urls))
