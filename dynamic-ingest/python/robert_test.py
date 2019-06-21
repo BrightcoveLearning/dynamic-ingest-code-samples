@@ -7,7 +7,7 @@ import argparse
 import boto3
 
 pub_id = "57838016001"
-client_id = 0c372722-ef25-4d2e-a25e-0011463086eb"
+client_id = "0c372722-ef25-4d2e-a25e-0011463086eb"
 client_secret = "Mulxn2M15RAUCGXzhSz7lrlyL9S6y5rdPEoWEARhjpTcYrAnDkQbklDpPzPBZJG37652RAdBahr71bxAvMuIdQ"
 source_filepath = "../test_asset/test_video.mp4"
 access_token_url = "https://oauth.brightcove.com/v3/access_token"
